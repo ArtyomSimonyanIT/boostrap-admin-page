@@ -1,0 +1,124 @@
+header {
+    width: 22%;
+}
+
+body {
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+
+.arrowLeft {
+    margin-bottom: 3vw;
+}
+
+.customComponents {
+    display: block;
+}
+
+.divTextBP {
+    color: #5a5c69;
+    margin-top: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-left: 3vw;
+}
+
+.texttt {
+    margin-bottom: 1.5rem;
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #858796;
+    text-align: left;
+    width: 92.5%;
+    margin: auto;
+}
+
+.aa {
+    color: #4e73df;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.aa:hover {
+    text-decoration: underline;
+}
+
+.colorCont {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5vw 0;
+}
+
+
+
+.component {
+    width: 31%;
+}
+
+
+
+
+
+.comp1-1 {
+    /* width: calc(100% - 1vw); */
+    border-radius: 0.5vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.c1-1H {
+    width: calc(100% - 2vw);
+    background-color: #F8F9FC;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+    padding: 1vw;
+    border: 0.1vw solid gainsboro;
+    color: #4e73df;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2vw;
+}
+
+.components {
+    width: 47%;
+}
+
+.compBody {
+    width: calc(100% - 2vw);
+    border: 0.1vw solid gainsboro;
+    border-top: 0;
+    background-color: white;
+    padding: 1vw;
+    padding: 1vw;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #858796;
+    text-align: left;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #858796;
+}
+
+.compBody span{
+    font-weight: bolder;
+}

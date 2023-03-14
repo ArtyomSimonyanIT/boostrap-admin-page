@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div style="display: flex;">
+        <header id="header">
+            <div class="header-h1-div">
+                <i class="fa-solid fa-face-laugh-wink"></i>
+                <h3 id="sbAdmin">SB ADMIN ²</h3>
+            </div>
+            <div class="line"></div>
+            <a href="#" style="text-decoration: none;"><button class="hButtons"><i
+                        class="fa-sharp fa-solid fa-gauge-high"></i> <span id="dash">Dashboard</span></button></a>
+            <div class="line"></div>
+            <h6 class="h66">INTERFACE</h6>
+            <button class="hButtons hButtonsF" onclick="openComponents()">
+                <div class="d">
+                    <i class="fa-solid fa-gear"></i> <br class="br"> Components
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-right openComponentsI" id="openComponentsI"></i>
+                </div>
+            </button>
+            <div class="customComponents" id="customComponents">
+                <h6>CUSTOM COMPONENTS:</h6>
+                <a href="./buttons.html">
+                    <button>Buttons</button>
+                </a>
+                <a href="./cards.html">
+                    <button>Cards</button>
+                </a>
+            </div>
+            <button class="hButtons hButtonsF" onclick="openUtilities()">
+                <div>
+                    <i class="fa-solid fa-wrench"></i> <br class="br"> Utilities
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-right openComponentsI" id="openUtilitiesI"></i>
+                </div>
+            </button>
+            <div class="customComponents" id="customUtilites">
+                <h6>CUSTOM UTILITIES:</h6>
+                <a href="./colors.html">
+                    <button>Colors</button>
+                </a>
+                <a href="./borders.html">
+                    <button>Borders</button>
+                </a>
+                <a href="./animations.html">
+                    <button>Animations</button>
+                </a>
+                <a href="./other.html">
+                    <button>Other</button>
+                </a>
+            </div>
+            <div class="line"></div>
+
+            <h6 class="h66">ADDONS</h6>
+            <button class="hButtons hButtonsF" onclick="openLoginScreens()">
+                <div class="a2">
+                    <i class="fa-solid fa-folder"></i> <br class="br"> Pages
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-right openComponentsI" id="openPagesI"></i>
+                </div>
+            </button>
+            <div class="customComponents" id="loginScreens">
+                <h6>LOGIN SCREENS:</h6>
+                <a href="./login.html"><button>Login</button></a>
+                <a href="./register.html"><button>Register</button></a>
+                <a href="./forgotPass.html"><button>Forgot Password</button></a>
+                <h6>OTHER PAGES:</h6>
+                <a href="./errorPage.html">
+                    <button>404 Page</button>
+                </a>
+                <a href="./blankPage.html">
+                    <button>Blank Page</button>
+                </a>
+            </div>
+            <a href="./charts.html">
+                <button class="hButtons"><i class="fa-solid fa-chart-area"></i> <br class="br"> Charts</button>
+            </a>
+            <a href="./tables.html">
+                <button class="hButtons"><i class="fa-solid fa-table"></i> <br class="br"> Tables</button>
+            </a>
+            <div class="line"></div>
+            <button class="arrowLeft" onclick="arrowLeft()" id="arrowLeftRot">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+        </header>
+        <div>
+            <div class="informHDiv">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <input type="text" class="informInp" placeholder="Search for...">
+                    <button class="informBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <div style="cursor: pointer; margin-right: 2.4vw; display: flex; justify-content: center; align-items: center;"
+                        onclick="bell()">
+                        <i class="fa-solid fa-bell"></i>
+                        <div class="count">3+</div>
+                    </div>
+                    <div class="bell" id="bell">
+                        <p>ALERTS CENTER</p>
+                        <div class="bellComp g1">
+                            <div>
+                                <div class="bellIcon"><i class="fa-solid fa-file-lines"></i></div>
+                            </div>
+                            <div class="bellInform">
+                                <div class="bellData">December 12,2019</div>
+                                <div class="bellCompText">A new monthly report is ready to download!</div>
+                            </div>
+                        </div>
+                        <div class="bellComp g1">
+                            <div>
+                                <div class="bellIcon"><i class="fa-solid fa-circle-dollar-to-slot"></i></div>
+                            </div>
+                            <div class="bellInform">
+                                <div class="bellData">December 7,2019</div>
+                                <div class="bellCompText BCT">$290.29 has been deposited into your account!</div>
+                            </div>
+                        </div>
+                        <div class="bellComp">
+                            <div>
+                                <div class="bellIcon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                            </div>
+                            <div class="bellInform">
+                                <div class="bellData">December 2,2019</div>
+                                <div class="bellCompText BCT">Spending Alert: Weve noticed unusually high spending for
+                                    your account</div>
+                            </div>
+                        </div>
+                        <button class="bellButton">Show all alerts</button>
+                    </div>
+                    <div style="cursor: pointer; margin-right: 2.4vw; display: flex; justify-content: center; align-items: center;"
+                        onclick="openEnv()" id="env">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="count">7</div>
+                    </div>
+                    <div class="envelope" id="envelope">
+                        <p>MESSAGE CENTER</p>
+                        <div class="bellComp g1">
+                            <div>
+                                <div class="envelopeImg1">
+                                    <div class="onlineOrOff green"></div>
+                                </div>
+                            </div>
+                            <div class="bellInform">
+                                <div class="envelopeCompText">Hi there! i am wondering if you ...</div>
+                                <div class="envelopeData">Emily Fowler • 58m</div>
+                            </div>
+                        </div>
+                        <div class="bellComp g1">
+                            <div>
+                                <div class="envelopeImg2">
+                                    <div class="onlineOrOff gray"></div>
+                                </div>
+                            </div>
+                            <div class="bellInform">
+                                <div class="envelopeCompText BCT">I have the photos that you ordere ...</div>
+                                <div class="envelopeData">Jae Chun • 1d</div>
+                            </div>
+                        </div>
+                        <div class="bellComp g1">
+                            <div>
+                                <div class="envelopeImg3">
+                                    <div class="onlineOrOff yellow"></div>
+                                </div>
+                            </div>
+                            <div class="bellInform">
+                                <div class="envelopeCompText BCT">Last months report look grat, I ...</div>
+                                <div class="envelopeData">Morgan Alvarez • 2d</div>
+                            </div>
+                        </div>
+                        <div class="bellComp">
+                            <div>
+                                <div class="envelopeImg4">
+                                    <div class="onlineOrOff green"></div>
+                                </div>
+                            </div>
+                            <div class="bellInform">
+                                <div class="envelopeCompText BCT">Am I a good boy? The reason I as ...</div>
+                                <div class="envelopeData">Chicken The Dog • 2w</div>
+                            </div>
+                        </div>
+                        <button class="bellButton">Read More Messages</button>
+                    </div>
+                    <div class="informLine"></div>
+                    <div style="display: flex; justify-content: center; align-items: center; cursor: pointer;">
+                        <p>Douglas McGee</p>
+                        <div class="userImg"></div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="dasH1">Dashboard</h1>
+            <button class="generateButton"><i class="fa-solid fa-download"></i>Generate Report</button>
+            <div class="allComp">
+                <div class="Emonyhly">
+                    <div class="emDiv">
+                        <div class="Etext">EARNINGS (MONTHLY) <br>
+                            <span class="Ecount">$40,000</span>
+                        </div>
+                        <div class="EdivForIcon">
+                            <i class="fa-solid fa-calendar"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="Eannual">
+                    <div class="emDiv">
+                        <div class="Etext" style="color: #00CB8C;">EARNINGS (ANNUAL) <br>
+                            <span class="Ecount">$215,000</span>
+                        </div>
+                        <div class="EdivForIcon">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="Etasks">
+                    <div class="emDiv">
+                        <div class="Etext" style="color: #31BCCB;">TASKS <br>
+                            <span class="Ecount">50%</span>
+                        </div>
+                        <div class="TDiv">
+                            <div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="EdivForIcon">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="EpendingReq">
+                    <div class="emDiv">
+                        <div class="Etext" style="color: #F5BF4B;">PENDING REQUESTS <br>
+                            <span class="Ecount">18</span>
+                        </div>
+                        <div class="EdivForIcon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chartContainer">
+                <div class="earnOverview">
+                    <div class="eOverHeader">
+                        Earning Overview
+                        <i class="fa-solid fa-ellipsis-vertical" id="openDropdown" onclick="opendropdown()"></i>
+                    </div>
+                    <canvas id="myChart" width="100%" height="50vw" style="border: 0.1vw solid gainsboro;">
+
+                    </canvas>
+                </div>
+                <div class="dropdownHeader" id="dropdownHeader">
+                    <h4>DROPDOWN HEADER:</h4>
+                    <button>Action</button>
+                    <button>Another Action</button>
+                    <div></div>
+                    <button class="dropdownHeaderBtn">Something else here</button>
+                </div>
+                <div class="earnRevenue">
+                    <div class="eOverHeader">
+                        Revenue Sources
+                        <i class="fa-solid fa-ellipsis-vertical" onclick="opendropdown2()"></i>
+                    </div>
+                    <div class="dropdownHeader dropdownHeader2" id="dropdownHeader2">
+                        <h4>DROPDOWN HEADER:</h4>
+                        <button>Action</button>
+                        <button>Another Action</button>
+                        <div></div>
+                        <button class="dropdownHeaderBtn">Something else here</button>
+                    </div>
+                    <div>
+                        <div class="rev1"></div>
+                        <div class="rev2"></div>
+                        <div class="rev3"></div>
+                    </div>
+                    <div class="ChColorCont">
+                        <div class="ChC">
+                            <div class="ChCdirectColor"></div> Direct
+                        </div>
+                        <div class="ChC">
+                            <div class="ChCsocialColor"></div> Social
+                        </div>
+                        <div class="ChC">
+                            <div class="ChCreferralColor"></div> Referral
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fignya">
+                <div style="width: 45%;">
+                    <div class="earnOverview3">
+                        <div class="eOverHeader">
+                            Projects
+                        </div>
+                    </div>
+                    <div style="background-color: white; border: 0.1vw solid gainsboro;">
+                        <div class="Fprojects">
+                            <div class="Ftext">
+                                Server Migration
+                                <span>20%</span>
+                            </div>
+                            <div class="Fserver">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="Fprojects">
+                            <div class="Ftext">
+                                Sales Tracking
+                                <span>40%</span>
+                            </div>
+                            <div class="Fsales">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="Fprojects">
+                            <div class="Ftext">
+                                Customer Database
+                                <span>60%</span>
+                            </div>
+                            <div class="Fcustomer">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="Fprojects">
+                            <div class="Ftext">
+                                Payout Details
+                                <span>80%</span>
+                            </div>
+                            <div class="Fpayout">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="Fprojects">
+                            <div class="Ftext">
+                                Account Setup
+                                <span>Completed!</span>
+                            </div>
+                            <div class="Faccount">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colorsCont">
+                        <div class="colors primary">
+                            Primary
+                            <div>
+                                #4e73df
+                            </div>
+                        </div>
+                        <div class="colors success">
+                            Success
+                            <div>#1cc88a</div>
+                        </div>
+                        <div class="colors info">
+                            Info
+                            <div>#36b9cc</div>
+                        </div>
+                        <div class="colors warning">
+                            Warning
+                            <div>#f6c23e</div>
+                        </div>
+                        <div class="colors danger">
+                            Danger
+                            <div>#e74a3b</div>
+                        </div>
+                        <div class="colors secondary">
+                            Secondary
+                            <div>#858796</div>
+                        </div>
+                        <div class="colors light">
+                            Light <br>
+                            <span>#f8f9fc</span>
+                        </div>
+                        <div class="colors dark">
+                            Dark
+                            <div>#5a5c69</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 50%;">
+                    <div class="earnOverview3">
+                        <div class="eOverHeader">
+                            Illustrations
+                        </div>
+                    </div>
+                    <div class="cont2">
+                        <div style="height: 1px;"></div>
+                        <img src="./undraw_posting_photo.svg" alt="">
+                        <div class="cont2TextDiv">
+                            Add some quality, svg illustrations to your project courtesy of
+                            <a href="https://undraw.co/">unDraw</a>
+                            , a constantly updated collection of beautiful svg images that you can use completely free
+                            and without attribution!
+                        </div>
+                        <a href="https://undraw.co/" class="aForCont2">Browse Illustrations on unDraw →</a>
+                    </div>
+
+
+                    <div class="earnOverview4">
+                        <div class="eOverHeader">
+                            Development Approach
+                        </div>
+                    </div>
+                    <div class="cont2">
+                        <div style="height: 1.4vw;"></div>
+                        <div class="cont2TextDiv">
+                            SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat
+                            and poor page performance. Custom CSS classes are used to create custom components and
+                            custom utility classes.
+                        </div>
+                        <div class="cont2TextDiv2">
+                            Before working with this theme, you should become familiar with the Bootstrap framework,
+                            especially the utility classes.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                Copyright © Your Website 2021
+            </footer>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/c0339d01fc.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        let data = {
+            labels: ['Jan', 'Mar', "May", 'Jul', 'Sep', "Nov"],
+            datasets: [{
+                label: '',
+                data: [0, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 45000],
+                backgroundColor: [
+                    'white'
+                ],
+                borderColor: [
+                    '#4e73df'
+                ],
+                borderWidth: 4,
+                tension: 0.5,
+                fill: false,
+                pointBackgroundColor: "#4e73df",
+                pointHitRadius: 400,
+                pointHoverBorderWidth: 1,
+
+            }]
+        }
+
+        let ctx = document.querySelector('#myChart').getContext('2d');
+        let myChart = new Chart(ctx, {
+            type: "line",
+            data: data,
+            options: {
+                layout: {
+                    padding: 20
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            },
+            borderJoinStyle: false
+        })
+
+    </script>
+</body>
+
+</html>

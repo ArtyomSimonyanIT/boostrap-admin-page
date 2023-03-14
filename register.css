@@ -1,0 +1,192 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.5vw;
+    width: 80%;
+}
+
+.dogCont{
+    width: 45%;
+}
+
+.dog{
+    background: url(https://source.unsplash.com/Mv9hjnEUHR4/600x800);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+
+.another h1{
+    color: #3a3b45;
+    margin-bottom: 1.5rem;
+    margin-top: 2vw;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 1.7vw;
+}
+
+.another{
+    width: 55%;
+}
+
+.form{
+    width: 80%;
+    margin: auto;
+}
+
+.btnType1{
+    width: 47%;
+    font-size: 0.94vw;
+    text-align: left;
+    background-color: white;
+    border: 0.1vw solid gainsboro;
+    padding: 1.2vw 1vw;
+    border-radius: 15rem;
+    color: gray;
+}
+
+.btnType2{
+    width: 100%;
+    font-size: 0.94vw;
+    text-align: left;
+    background-color: white;
+    border: 0.1vw solid gainsboro;
+    padding: 1.2vw 1vw;
+    border-radius: 15rem;
+    color: gray;
+}
+
+
+.btnType3{
+    width: 100%;
+    font-size: 0.94vw;
+    text-align: center;
+    background-color: #506FD1;
+    border: 0.1vw solid gainsboro;
+    padding: 1.2vw 1vw;
+    border-radius: 15rem;
+    color: white;
+    margin-bottom: 1.5vw;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.btnType3:hover{
+    background-color: #224abe;
+}
+
+.googleBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw 0;
+    background-color: #ea4335;
+    border-radius: 15rem;
+    border: none;
+    color: white;
+    font-size: 1vw;
+    font-weight: 400;
+    font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    transition: 0.2s;
+    margin-bottom: 1vw;
+    cursor: pointer;
+}
+
+.googleBtn:hover{
+    background-color: #D8001E;
+}
+
+.fa-google{
+    padding: 0 0.5vw;
+}
+
+
+.facebookBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw 0;
+    background-color: #3b5998;
+    border-radius: 15rem;
+    border: none;
+    color: white;
+    font-size: 1vw;
+    font-weight: 400;
+    font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    transition: 0.2s;
+    margin-bottom: 1vw;
+    cursor: pointer;
+}
+
+.facebookBtn:hover{
+    background-color: #2F4472;
+}
+
+.fa-facebook-f{
+    padding: 0 0.5vw;
+}
+
+.line{
+    width: 100%;
+    border-top: 0.1vw solid gainsboro;
+    margin-bottom: 1.5vw;
+}
+
+
+.line2{
+    width: 100%;
+    border-top: 0.1vw solid gainsboro;
+    margin: 2vw 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.a{
+    display: block;
+    text-align: center;
+    padding-top: 0.3vw;
+    font-size: 1vw;
+    text-decoration: none;
+    color: #4e73df;
+}
+
+.aa{
+    padding-bottom: 2vw;
+}
+
+footer {
+    padding: 2rem 0;
+    flex-shrink: 0;
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #858796;
+    text-align: center;
+    background-color: white;
+    font-size: 0.9vw;
+    margin-top: 4vw;
+}

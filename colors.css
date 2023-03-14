@@ -1,0 +1,305 @@
+header {
+    width: 22%;
+}
+
+body {
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+
+.arrowLeft {
+    margin-bottom: 3vw;
+}
+
+.customComponents {
+    display: block;
+}
+
+.divTextBP {
+    color: #5a5c69;
+    margin-top: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-left: 3vw;
+}
+
+.texttt {
+    margin-bottom: 1.5rem;
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #858796;
+    text-align: left;
+    width: 92.5%;
+    margin: auto;
+}
+
+.aa {
+    color: #4e73df;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.aa:hover {
+    text-decoration: underline;
+}
+
+.colorCont {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5vw 0;
+}
+
+
+
+.component {
+    width: 31%;
+}
+
+
+
+
+
+.comp1-1 {
+    /* width: calc(100% - 1vw); */
+    border-radius: 0.5vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.c1-1H {
+    width: calc(100% - 2vw);
+    background-color: #F8F9FC;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+    padding: 1vw;
+    border: 0.1vw solid gainsboro;
+    color: #4e73df;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+.c1-1H {
+    /* width: 100%; */
+    border: 0.1vw solid gainsboro;
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.c1-H1BC {
+    background-color: #5A5C69;
+    width: calc(100% - 2vw);
+    margin: auto;
+    margin-top: 1vw;
+}
+
+.c1-H1B {
+    width: 100%;
+    background-color: white;
+    border: 0.1vw solid gainsboro;
+    border-top: 0;
+}
+
+.pForH1 {
+    padding: 1vw;
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.p100 {
+    color: #f8f9fc;
+}
+
+.p200 {
+    color: #eaecf4;
+}
+
+.p300 {
+    color: #dddfeb;
+}
+
+.p400 {
+    color: #d1d3e2;
+}
+
+.p500 {
+    color: #b7b9cc;
+    padding-top: 0vw;
+}
+
+.p600 {
+    color: #858796;
+}
+
+.p700 {
+    color: #6e707e;
+}
+
+.p800 {
+    color: #5a5c69;
+}
+
+.p900 {
+    color: #3a3b45;
+}
+
+.c12-H1BC {
+    padding: vw;
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.comp1-2 {
+    border-radius: 0.5vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5vw;
+}
+
+.sizeStyle {
+    padding: 0.5rem 1rem;
+}
+
+.size1 {
+    font-size: .7rem;
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 400;
+    line-height: 1.5;
+    color: #858796;
+    text-align: left;
+}
+
+.size2 {
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 400;
+    line-height: 1.5;
+    color: #858796;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+
+
+.gradient{
+    width: calc(100% - 4vw);
+    color: white;
+    padding: 3rem 1vw;
+    margin: auto;
+    font-weight: 500;
+}
+
+.primary{
+    background-color: #4e73df;
+    background-image: linear-gradient(180deg,#4e73df 10%,#224abe 100%);
+    background-size: cover;
+}
+
+.secondary{
+    background-color: #858796;
+    background-image: linear-gradient(180deg,#858796 10%,#60616f 100%);
+    background-size: cover;
+}
+
+.success{
+    background-color: #1cc88a;
+    background-image: linear-gradient(180deg,#1cc88a 10%,#13855c 100%);
+    background-size: cover;
+}
+
+.info{
+    background-color: #36b9cc;
+    background-image: linear-gradient(180deg,#36b9cc 10%,#258391 100%);
+    background-size: cover;
+}
+
+.warning{
+    background-color: #f6c23e;
+    background-image: linear-gradient(180deg,#f6c23e 10%,#dda20a 100%);
+    background-size: cover;
+}
+
+.danger{
+    background-color: #e74a3b;
+    background-image: linear-gradient(180deg,#e74a3b 10%,#be2617 100%);
+    background-size: cover;
+}
+
+.light{
+    background-color: #f8f9fc;
+    background-image: linear-gradient(180deg,#f8f9fc 10%,#c2cbe5 100%);
+    background-size: cover;
+}
+
+.dark{
+    
+    background-color: #5a5c69;
+    background-image: linear-gradient(180deg,#5a5c69 10%,#373840 100%);
+    background-size: cover;
+    margin-bottom: 1vw;
+}
+
+.bggray{
+    width: calc(100% - 2vw - 2rem);
+    padding: 1rem;
+    margin: auto;
+    font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #858796;
+}
+
+.gray-100{
+    background-color: #f8f9fc;
+}
+
+.gray-200{
+    background-color: #eaecf4;
+}
+
+.gray-300{
+    background-color: #dddfeb;
+}
+
+.gray-400{
+    background-color: #d1d3e2;
+}
+
+.gray-500{
+    background-color: #b7b9cc;
+    color: white;
+}
+
+.gray-600{
+    color: white;
+    background-color: #858796;
+}
+
+.gray-700{
+    color: white;
+    background-color: #6e707e;
+}
+
+.gray-800{
+    color: white;
+    background-color: #5a5c69;
+    
+}
+
+.gray-900{
+    color: white;
+    background-color: #3a3b45;
+    margin-bottom: 1vw;
+}

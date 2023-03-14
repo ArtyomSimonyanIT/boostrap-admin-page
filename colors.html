@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./colors.css">
+</head>
+
+<body>
+    <div style="display: flex;">
+        <header id="header">
+            <div class="header-h1-div">
+                <i class="fa-solid fa-face-laugh-wink"></i>
+                <h3 id="sbAdmin">SB ADMIN ²</h3>
+            </div>
+            <div class="line"></div>
+            <a href="./index.html" style="text-decoration: none;"><button class="hButtons"><i
+                        class="fa-sharp fa-solid fa-gauge-high"></i> <span id="dash">Dashboard</span></button></a>
+            <div class="line"></div>
+            <h6 class="h66">INTERFACE</h6>
+            <button class="hButtons hButtonsF" onclick="openComponents()">
+                <div class="d">
+                    <i class="fa-solid fa-gear"></i> <br class="br"> Components
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-right openComponentsI" id="openComponentsI"></i>
+                </div>
+            </button>
+            <div class="customComponents" id="customComponents">
+                <h6>CUSTOM COMPONENTS:</h6>
+                <a href="./buttons.html">
+                    <button>Buttons</button>
+                </a>
+                <a href="./cards.html">
+                    <button>Cards</button>
+                </a>
+
+
+            </div>
+            <button class="hButtons hButtonsF" onclick="openUtilities()">
+                <div style="color: white; font-weight: 500;">
+                    <i class="fa-solid fa-wrench"></i> <br class="br"> Utilities
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-right openComponentsI" id="openUtilitiesI" style="rotate: 90deg;"></i>
+                </div>
+            </button>
+            <div class="customComponents" id="customUtilites">
+                <h6>CUSTOM UTILITIES:</h6>
+                <a href="./colors.html"><button style="color: #4e73df; font-weight: 700;">Colors</button></a>
+                <a href="./borders.html"><button>Borders</button></a>
+                <a href="./animations.html"><button>Animations</button></a>
+                <a href="./other.html"><button>Other</button></a>
+            </div>
+            <div class="line"></div>
+
+            <h6 class="h66">ADDONS</h6>
+            <button class="hButtons hButtonsF" onclick="openLoginScreens()">
+                <div class="a2">
+                    <i class="fa-solid fa-folder"></i> <br class="br"> Pages
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-right openComponentsI" id="openPagesI"></i>
+                </div>
+            </button>
+            <div class="customComponents" id="loginScreens">
+                <h6>LOGIN SCREENS:</h6>
+                <a href="./login.html"><button>Login</button></a>
+                <a href="./register.html"><button>Register</button></a>
+                <a href="./forgotPass.html"><button>Forgot Password</button></a>
+                <h6>OTHER PAGES:</h6>
+                <a href="./errorPage.html">
+                    <button class="page404">404 Page</button>
+                </a>
+                <a href="./blankPage.html">
+                    <button>Blank Page</button>
+                </a>
+            </div>
+            <a href="./charts.html">
+                <button class="hButtons"><i class="fa-solid fa-chart-area"></i> <br class="br"> Charts</button>
+            </a>
+            <a href="./tables.html">
+                <button class="hButtons"><i class="fa-solid fa-table"></i> <br class="br"> Tables</button>
+            </a>
+            <div class="line"></div>
+            <button class="arrowLeft" onclick="arrowLeft()" id="arrowLeftRot">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+        </header>
+        <div style="width: 100%;">
+            <div class="informHDiv">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <input type="text" class="informInp" placeholder="Search for...">
+                    <button class="informBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <div style="cursor: pointer; margin-right: 2.4vw; display: flex; justify-content: center; align-items: center;"
+                        onclick="bell()">
+                        <i class="fa-solid fa-bell"></i>
+                        <div class="count">3+</div>
+                    </div>
+                    <div class="bell" id="bell">
+                        <p>ALERTS CENTER</p>
+                        <div class="bellComp g1">
+                            <div>
+                                <div class="bellIcon"><i class="fa-solid fa-file-lines"></i></div>
+                            </div>
+                            <div class="bellInform">
+                                <div class="bellData">December 12,2019</div>
+                                <div class="bellCompText">A new monthly report is ready to download!</div>
+                            </div>
+                        </div>
+                        <div class="bellComp g1">
+                            <div>
+                                <div class="bellIcon"><i class="fa-solid fa-circle-dollar-to-slot"></i></div>
+                            </div>
+                            <div class="bellInform">
+                                <div class="bellData">December 7,2019</div>
+                                <div class="bellCompText BCT">$290.29 has been deposited into your account!</div>
+                            </div>
+                        </div>
+                        <div class="bellComp">
+                            <div>
+                                <div class="bellIcon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                            </div>
+                            <div class="bellInform">
+                                <div class="bellData">December 2,2019</div>
+                                <div class="bellCompText BCT">Spending Alert: Weve noticed unusually high spending for
+                                    your account</div>
+                            </div>
+                        </div>
+                        <button class="bellButton">Show all alerts</button>
+                    </div>
+                    <div style="cursor: pointer; margin-right: 2.4vw; display: flex; justify-content: center; align-items: center;"
+                        onclick="openEnv()" id="env">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="count">7</div>
+                    </div>
+                    <div class="envelope" id="envelope">
+                        <p>MESSAGE CENTER</p>
+                        <div class="bellComp g1">
+                            <div>
+                                <div class="envelopeImg1">
+                                    <div class="onlineOrOff green"></div>
+                                </div>
+                            </div>
+                            <div class="bellInform">
+                                <div class="envelopeCompText">Hi there! i am wondering if you ...</div>
+                                <div class="envelopeData">Emily Fowler • 58m</div>
+                            </div>
+                        </div>
+                        <div class="bellComp g1">
+                            <div>
+                                <div class="envelopeImg2">
+                                    <div class="onlineOrOff gray"></div>
+                                </div>
+                            </div>
+                            <div class="bellInform">
+                                <div class="envelopeCompText BCT">I have the photos that you ordere ...</div>
+                                <div class="envelopeData">Jae Chun • 1d</div>
+                            </div>
+                        </div>
+                        <div class="bellComp g1">
+                            <div>
+                                <div class="envelopeImg3">
+                                    <div class="onlineOrOff yellow"></div>
+                                </div>
+                            </div>
+                            <div class="bellInform">
+                                <div class="envelopeCompText BCT">Last months report look grat, I ...</div>
+                                <div class="envelopeData">Morgan Alvarez • 2d</div>
+                            </div>
+                        </div>
+                        <div class="bellComp">
+                            <div>
+                                <div class="envelopeImg4">
+                                    <div class="onlineOrOff green"></div>
+                                </div>
+                            </div>
+                            <div class="bellInform">
+                                <div class="envelopeCompText BCT">Am I a good boy? The reason I as ...</div>
+                                <div class="envelopeData">Chicken The Dog • 2w</div>
+                            </div>
+                        </div>
+                        <button class="bellButton">Read More Messages</button>
+                    </div>
+                    <div class="informLine"></div>
+                    <div style="display: flex; justify-content: center; align-items: center; cursor: pointer;">
+                        <p>Douglas McGee</p>
+                        <div class="userImg"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="divTextBP">
+                    Color Utilities
+                </div>
+                <p class="texttt">
+                    Bootstrap's default utility classes can be found on the official
+                    <a href="" class="aa">Bootstrap
+                        Documentation</a>
+                    page. The custom utilities below were created to extend this theme past the default utility classes
+                    built into Bootstrap's framework.
+                </p>
+                <div class="colorCont">
+                    <div class="component">
+                        <div class="comp1-1">
+                            <div class="c1-1H">
+                                Custom Text Color Utilities
+                            </div>
+                            <div class="c1-H1B">
+                                <div class="c1-H1BC">
+                                    <p class="pForH1 p100">.text-gray-100</p>
+                                    <p class="pForH1 p200">.text-gray-200</p>
+                                    <p class="pForH1 p300">.text-gray-300</p>
+                                    <p class="pForH1 p400">.text-gray-400</p>
+                                </div>
+                                <div class="c12-H1BC">
+                                    <p class="pForH1 p500">.text-gray-500</p>
+                                    <p class="pForH1 p600">.text-gray-600</p>
+                                    <p class="pForH1 p700">.text-gray-700</p>
+                                    <p class="pForH1 p800">.text-gray-800</p>
+                                    <p class="pForH1 p900">.text-gray-900</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comp1-2">
+                            <div class="c1-1H">
+                                Custom Font Size Utilities
+                            </div>
+                            <div style="border: 0.1vw solid gainsboro; border-top: 0; width: 100%;">
+                                <p class="sizeStyle size1">
+                                    .text-xs
+                                </p>
+                                <p class="sizeStyle size2">
+                                    .text-lg
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="component">
+                        <div class="c1-1H">
+                            Custom Background Gradient Utilities
+                        </div>
+                        <div
+                            style="border: 0.1vw solid gainsboro; border-top: 0; width: 100%; background-color: white;">
+                            <div style="padding-bottom: 1vw;"></div>
+                            <div class="gradient primary">.bg-gradient-primary</div>
+                            <div class="gradient secondary">.bg-gradient-secondary</div>
+                            <div class="gradient success">.bg-gradient-success </div>
+                            <div class="gradient info">.bg-gradient-info</div>
+                            <div class="gradient warning">.bg-gradient-warning</div>
+                            <div class="gradient danger">.bg-gradient-danger</div>
+                            <div class="gradient light">.bg-gradient-light</div>
+                            <div class="gradient dark">.bg-gradient-dark</div>
+                        </div>
+                    </div>
+                    <div class="component">
+                        <div class="c1-1H">
+                            Custom Grayscale Background Utilities
+                        </div>
+                        <div
+                            style="border: 0.1vw solid gainsboro; border-top: 0; width: 100%; background-color: white;">
+                            <div style="padding-bottom: 1vw;"></div>
+                            <div class="bggray gray-100">.bg-gray-100</div>
+                            <div class="bggray gray-200">.bg-gray-200</div>
+                            <div class="bggray gray-300">.bg-gray-300</div>
+                            <div class="bggray gray-400">.bg-gray-400</div>
+                            <div class="bggray gray-500">.bg-gray-500</div>
+                            <div class="bggray gray-600">.bg-gray-600</div>
+                            <div class="bggray gray-700">.bg-gray-700</div>
+                            <div class="bggray gray-800">.bg-gray-800</div>
+                            <div class="bggray gray-900">.bg-gray-900</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                Copyright © Your Website 2021
+            </footer>
+        </div>
+
+        <script src="https://kit.fontawesome.com/c0339d01fc.js" crossorigin="anonymous"></script>
+        <script src="./colors.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 400;
+    line-height: 1.5;
+    color: #858796;
+}
+
+.container{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.5vw;
+    background-color: white;
+}
+
+.dogCont{
+    width: 50%;
+}
+
+.dog{
+    background: url(https://source.unsplash.com/oWTW-jNGl9I/600x800);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 0.5vw;
+    border-top-left-radius: 0.5vw;
+    width: 100%;
+    height: 100%;
+}
+
+
+.another{
+    width: 50%;
+}
+
+.another h1{
+    color: #3a3b45;
+    margin-top: 4vw;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.cont{
+    width: 82%;
+    margin: auto;
+}
+
+.cont p {
+    font-size: 1.4vw;
+    text-align: center;
+}
+
+.emailInp{
+    width: calc(100% - 1vw);
+    padding: 1.3vw 1vw;
+    padding-right: 0;
+    font-size: 0.9vw;
+    background-color: white;
+    border: 0.1vw solid gainsboro;
+    border-radius: 15rem;
+    margin: 1vw 0;
+    outline: none;
+}
+
+.emailBtn{
+    width: 100%;
+    border-radius: 15rem;
+    background-color: #506FD1;
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5vw;
+    color: white;
+    border: none;
+    font-size: 1.1vw;
+    cursor: pointer;
+    transition: .2s;
+    outline: none;
+}
+
+.emailBtn:hover{
+    background-color: #224abe;
+}
+
+.line{
+    margin-bottom: 3vw;
+    border-top: 0.1vw solid gainsboro;
+}
+
+a{
+    text-decoration: none;
+}
+
+.a{
+    display: block;
+    text-align: center;
+    /* padding-top: 0.3vw; */
+    font-size: 1vw;
+    text-decoration: none;
+    color: #4e73df;
+}
+
+.aa{
+    padding-bottom: 2vw;
+}
+
+.a:hover{
+    text-decoration-line: underline;
+}
